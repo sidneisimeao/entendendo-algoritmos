@@ -1,4 +1,4 @@
-import { pesquisaBinaria } from "../../functions/pesquisa";
+import { pesquisaBinaria, calculaEtapas } from "../../functions/pesquisa";
 
 export default function page() {
   const listaOrdenada: Array<number> = Array.from(
@@ -6,7 +6,7 @@ export default function page() {
     (_, i: number) => i++
   );
 
-  const item: number = 79;
+  const item: number = 5000;
 
-  return <div>{pesquisaBinaria(listaOrdenada, item)}</div>;
+  return <div>{calculaEtapas(item)}</div>;
 }

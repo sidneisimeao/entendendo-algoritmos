@@ -33,3 +33,17 @@ export function pesquisaBinaria(
   }
   return "Não encontrado!";
 }
+/**
+ * Calcula a quantidade maxima de etapas para aceertar um numero
+ * @param tamanhoLista number
+ * @returns
+ */
+export function calculaEtapas(tamanhoLista: number): number {
+  let etapas = 0;
+  let metade = tamanhoLista;
+  while (metade > 0) {
+    metade = Math.floor(metade / 2);
+    etapas++;
+  }
+  return etapas;
+}
