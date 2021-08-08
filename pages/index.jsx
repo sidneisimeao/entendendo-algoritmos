@@ -25,8 +25,14 @@ export default function Home() {
               <h2>Pesquisa Binária &rarr;</h2>
               <p>
                 É um algoritmo que recebe uma lista ordernada de elementos e o
-                elemento que esta sendo pesquisado.
+                elemento que esta sendo pesquisado. O(log n)
               </p>
+            </a>
+          </Link>
+          <Link href="/ordenacao-selecao">
+            <a className={styles.card}>
+              <h2>Ordenação por Seleção &rarr;</h2>
+              <p>Ordena verificanco a cada etapa todos elementos. O(n x n)</p>
             </a>
           </Link>
         </div>

@@ -1,6 +1,6 @@
 import { pesquisaBinaria, calculaEtapas } from "../../functions/pesquisa";
 
-export default function page() {
+export default function Page() {
   const listaOrdenada: Array<number> = Array.from(
     { length: 100 },
     (_, i: number) => i++
@@ -8,5 +8,12 @@ export default function page() {
 
   const item: number = 5000;
 
-  return <div>{calculaEtapas(item)}</div>;
+  return (
+    <div>
+      Quantas etapas são necessárias para se encontrar um numero num array de{" "}
+      {item} posições?
+      <br />
+      Reposta: {calculaEtapas(item)}
+    </div>
+  );
 }
