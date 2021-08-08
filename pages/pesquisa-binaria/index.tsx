@@ -6,7 +6,7 @@ export default function Page() {
     (_, i: number) => i++
   );
 
-  const item: number = 5000;
+  const item: number = 100;
 
   return (
     <div>

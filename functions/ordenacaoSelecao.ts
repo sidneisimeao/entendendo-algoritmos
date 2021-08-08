@@ -36,6 +36,5 @@ export function ordernacaPorSelecao(arr: Array<number>): Array<number> {
     // adiciona o menor elmento do array original ao novo array
     novoArr.push(valor);
   }
-  console.log(novoArr);
   return novoArr;
 }

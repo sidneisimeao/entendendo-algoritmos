@@ -7,7 +7,7 @@
 export function pesquisaBinaria(
   listaOrdenada: Array<number>,
   item: number
-): number | string {
+): number | boolean {
   // inicio da lista
   let baixo = 0;
   // maior indifim da lista
@@ -31,7 +31,7 @@ export function pesquisaBinaria(
       baixo = meio + 1;
     }
   }
-  return "Não encontrado!";
+  return false;
 }
 /**
  * Calcula a quantidade maxima de etapas para aceertar um numero
